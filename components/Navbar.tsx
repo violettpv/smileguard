@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
@@ -7,6 +8,8 @@ import { HEADER_HEIGHT_VH } from '@/constants';
 
 export default function Navbar() {
   const [isSticky, setIsSticky] = useState(false);
+
+  const t = useTranslations('navigation');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,16 +27,16 @@ export default function Navbar() {
     >
       <ul className="nav-list flex h-full w-full flex-col flex-wrap items-center justify-evenly gap-5 py-3.5 text-[1rem] sm:flex-row sm:gap-3 sm:py-0 sm:text-[1.05rem]">
         <li>
-          <a href="#about">Про нас</a>
+          <a href="#about">{t('aboutUs')}</a>
         </li>
         <li>
-          <a href="#works">Роботи</a>
+          <a href="#works">{t('works')}</a>
         </li>
         <li>
-          <Link href="/articles/">Статті</Link>
+          <Link href="/articles/">{t('articles')}</Link>
         </li>
         <li>
-          <Link href="/contact/">Контакти</Link>
+          <Link href="/contact/">{t('contacts')}</Link>
         </li>
       </ul>
     </nav>

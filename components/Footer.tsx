@@ -1,15 +1,19 @@
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
+import LanguageSwitcher from '@/components/LanguageSwitcher';
+
 export default function Footer() {
+  const t = useTranslations('footer');
   return (
     <footer className="relative bottom-0 left-0 flex h-fit min-h-[110px] w-full flex-col items-center justify-center gap-y-6 px-4 py-5 text-white">
       <div className="flex w-full flex-col items-start justify-around gap-y-3.5 sm:flex-row">
         <div className="footer-row-list">
-          <h2>Контакти</h2>
+          <h2>{t('contactsTitle')}</h2>
           <ul className="contacts">
             <li>
               <a href="https://maps.app.goo.gl/966RT4uJi8BwEVMJ9">
-                вул. Турівська 31, м. Київ, Україна
+                {t('address')}
               </a>
             </li>
             <li>
@@ -21,8 +25,8 @@ export default function Footer() {
           </ul>
         </div>
         <div className="footer-row-list">
-          <h2>Соціальні мережі</h2>
-          <ul className="socicons">
+          <h2>{t('socialMediaTitle')}</h2>
+          <ul className="flex flex-row justify-start gap-2 sm:justify-center">
             <li>
               <a href="http://">
                 <Image
@@ -54,11 +58,15 @@ export default function Footer() {
               </a>
             </li>
           </ul>
+          <LanguageSwitcher />
         </div>
       </div>
       <div>
-        © 2025 <a href="https://github.com/violettpv">Violetta Konovalchuk</a>.
-        Усі права захищено
+        © 2025{' '}
+        <a href="https://github.com/violettpv" target="_blank">
+          {t('author')}
+        </a>
+        . {t('copyright')}
       </div>
     </footer>
   );

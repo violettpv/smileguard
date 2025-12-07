@@ -1,6 +1,8 @@
+import OrderedSection from '@/components/OrderedSection';
+
 export default function MainContent() {
   return (
-    <main className="flex-1 p-2">
+    <main>
       <section>
         <h2>Lorem 1</h2>
         <p>
@@ -12,6 +14,7 @@ export default function MainContent() {
           Review full guidelines
         </a>
       </section>
+      <OrderedSection />
     </main>
   );
 }

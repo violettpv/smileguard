@@ -1,8 +1,11 @@
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 import { HEADER_HEIGHT_VH } from '@/constants';
 
 export default function Header() {
+  const t = useTranslations('header');
+
   return (
     <header
       style={{ height: `${HEADER_HEIGHT_VH}vh` }}
@@ -16,13 +19,7 @@ export default function Header() {
           height={55}
           className="mb-3.5 h-auto w-40 sm:w-[200px]"
         />
-        <div className="text-[1rem] sm:text-xl">
-          Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Quod! Lorem ipsum dolor sit. Lorem ipsum dolor sit,
-          amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Quod! Lorem ipsum
-          dolor sit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        </div>
+        <div className="text-[1rem] sm:text-xl">{t('bannerIntro')}</div>
       </div>
     </header>
   );

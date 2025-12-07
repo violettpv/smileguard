@@ -39,6 +39,7 @@ h6 {
   background: linear-gradient(90deg, #0391b8 0%, #101865 100%);
   background-size: 200% 200%;
   animation: gradientShift 8s ease infinite;
+  z-index: 99;
 }
 
 @keyframes gradientShift {
@@ -81,24 +82,21 @@ footer h2 {
   font-size: 1.1rem;
 }
 
-.socicons {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-}
-
 .contacts a {
   color: inherit;
   text-decoration: none;
 }
 
 main {
-  padding: 4rem;
+  padding: 2rem 5rem;
+  flex: 1;
 }
 
 main section {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  margin: 3rem 0;
 }
 
 main p {
@@ -150,4 +148,76 @@ main h3 {
 
 .classic-btn-link:hover {
   background-color: var(--color-btn-hover);
+}
+
+.ordered-section ol {
+  counter-reset: section 0;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 0px;
+  position: relative;
+}
+
+@media screen and (min-width: 770px) {
+  .ordered-section ol::before {
+    width: 300%;
+    height: 2px;
+    background-color: var(--color-primary);
+    position: absolute;
+    top: 2.5em;
+    z-index: 0;
+    content: '';
+    left: -50em;
+  }
+}
+
+.ordered-section ol li {
+  display: block;
+  z-index: 1;
+  flex: 1 1 0%;
+  padding: 1em;
+  font-size: 1.15rem;
+}
+.ordered-section ol li::before {
+  counter-increment: section 1;
+  content: counter(section);
+  display: flex;
+  text-align: center;
+  font-size: var(--font-size-h4);
+  color: var(--color-light);
+  width: 2em;
+  height: 2em;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin: 3px auto 1em;
+  background: var(--color-primary);
+  border-radius: 50%;
+}
+
+@media (max-width: 769.9px) {
+  main {
+    padding: 2rem 3.2rem;
+    flex: 1;
+  }
+
+  .ordered-section ol {
+    flex-direction: column;
+  }
+
+  .ordered-section ol li {
+    position: relative;
+    padding: 1em 0;
+  }
+  .ordered-section ol li::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    content: '';
+    top: 2em;
+    left: 0px;
+    z-index: -1;
+    background: var(--color-primary);
+  }
 }
