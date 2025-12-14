@@ -14,12 +14,25 @@
   --color-anchor: #1c7b87;
 }
 
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   background: var(--color-background);
   color: var(--color-text);
   font-family: var(--font-baloo-2), Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.no-scroll {
+  overflow: hidden !important;
+  height: 100vh !important;
+  position: relative !important;
 }
 
 h1,
@@ -32,14 +45,7 @@ h6 {
 }
 
 .banner-img {
-  background: url('/banner.webp') center / cover no-repeat;
-}
-
-.nav-gradient {
-  background: linear-gradient(90deg, #0391b8 0%, #101865 100%);
-  background-size: 200% 200%;
-  animation: gradientShift 8s ease infinite;
-  z-index: 99;
+  background: url('/banner1.webp') center / cover no-repeat;
 }
 
 @keyframes gradientShift {
@@ -54,10 +60,17 @@ h6 {
   }
 }
 
-.nav-list {
-  color: #fff;
+.blue-gradient {
+  background: linear-gradient(90deg, #0391b8 0%, #101865 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+  /* z-index: 99; */
+}
+
+.nav-list li {
+  color: var(--color-secondary);
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 800;
   letter-spacing: 1px;
 }
 
@@ -108,7 +121,7 @@ main h2,
 main h3 {
   padding: 0.25em 0.5em;
   color: var(--color-secondary);
-  margin-bottom: 0.8rem;
+  margin: 1rem 0;
 }
 
 main h2 {
