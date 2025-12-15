@@ -23,7 +23,7 @@ export default function Navbar() {
 
   return (
     <nav className="flex h-full w-2/3 items-center justify-end">
-      <ul className="nav-list hidden h-full w-full flex-row items-center justify-end gap-10 text-xl md:flex">
+      <ul className="nav-list hidden h-full w-full flex-row items-center justify-end gap-10 text-2xl md:flex">
         <li>
           <a href="#about">{t('aboutUs')}</a>
         </li>

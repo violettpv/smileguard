@@ -5,13 +5,18 @@ export default function Banner() {
   const t = useTranslations('header');
 
   return (
-    <div className="banner-img h-[100vh] w-full">
+    <div className="banner-img relative h-[100vh] w-full">
       <div className="white-half-gradient"></div>
-      <div className="flex h-full w-2/3 max-w-[800px] flex-col items-start justify-center pl-7">
-        <h1 className="text-left text-5xl sm:text-6xl">{t('title')}</h1>
-        <p className="text-justify">{t('bannerIntro')}</p>
+      <div className="relative z-10 flex h-full w-11/12 max-w-[700px] flex-col items-start justify-center pl-7 sm:w-2/3">
+        <h1
+          style={{ textShadow: '2px 2px 0 #fff' }}
+          className="mb-4 text-left text-5xl text-(--color-secondary) sm:text-6xl"
+        >
+          {t('title')}
+        </h1>
+        <p className="text-justify text-lg">{t('bannerIntro')}</p>
 
-        <a
+        {/* <a
           href="#about"
           title="about"
           className="blue-gradient flex items-center justify-center rounded-full p-3"
@@ -23,7 +28,7 @@ export default function Banner() {
             height={40}
             className="h-auto w-[40px]"
           />
-        </a>
+        </a> */}
       </div>
     </div>
   );

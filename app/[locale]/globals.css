@@ -2,7 +2,8 @@
 
 :root {
   --color-primary: #267dab;
-  --color-secondary: #312483;
+  --color-secondary: #163760;
+  --color-third: #312483;
   --color-secondary-faded: rgba(49, 36, 131, 0.8);
   --color-background: #ffffff;
   --color-background-2: #f4f4f8;
@@ -68,10 +69,11 @@ h6 {
 }
 
 .nav-list li {
+  font-family: var(--font-bebas-neue), Arial, Helvetica, sans-serif;
   color: var(--color-secondary);
   text-transform: uppercase;
   font-weight: 800;
-  letter-spacing: 1px;
+  letter-spacing: 1.4px;
 }
 
 footer {
@@ -200,9 +202,7 @@ main h3 {
   color: var(--color-light);
   width: 2em;
   height: 2em;
-  -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: center;
   justify-content: center;
   margin: 3px auto 1em;
   background: var(--color-primary);
@@ -233,4 +233,20 @@ main h3 {
     z-index: -1;
     background: var(--color-primary);
   }
+}
+
+.white-half-gradient {
+  position: absolute;
+  content: '';
+  inset: 0;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 85%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.7) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }

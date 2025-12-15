@@ -7,7 +7,7 @@ export default function Banner() {
   const t = useTranslations('header');
 
   return (
-    <header className="absolute top-0 flex h-fit w-full flex-row items-center justify-between p-5">
+    <header className="absolute top-0 z-20 flex h-fit w-full flex-row items-center justify-between p-5">
       <Image
         src="/logo.webp"
         alt="logo"
