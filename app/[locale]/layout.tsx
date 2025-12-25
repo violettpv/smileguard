@@ -1,22 +1,23 @@
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
-import { Baloo_2, Bebas_Neue } from 'next/font/google';
+import { Dela_Gothic_One, Exo_2 } from 'next/font/google';
 import { notFound } from 'next/navigation';
 
 import { routing } from '@/app/i18n/routing';
 
 import './globals.css';
 
-const bebasNeue = Bebas_Neue({
-  variable: '--font-bebas-neue',
+const delaGothicOne = Dela_Gothic_One({
+  variable: '--font-dela-gothic-one',
   weight: '400',
-  subsets: ['latin'],
+  subsets: ['latin', 'cyrillic'],
 });
 
-const baloo2 = Baloo_2({
-  variable: '--font-baloo-2',
-  subsets: ['latin'],
+const exo2 = Exo_2({
+  variable: '--font-exo-2',
+  weight: '400',
+  subsets: ['latin', 'cyrillic'],
 });
 
 export async function generateMetadata({
@@ -51,7 +52,9 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${bebasNeue.variable} ${baloo2.variable} antialiased`}>
+      <body
+        className={`${delaGothicOne.variable} ${exo2.variable} antialiased`}
+      >
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

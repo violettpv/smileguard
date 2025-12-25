@@ -7,14 +7,16 @@ export default function Banner() {
   return (
     <div className="banner-img relative h-[100vh] w-full">
       <div className="white-half-gradient"></div>
-      <div className="relative z-10 flex h-full w-11/12 max-w-[700px] flex-col items-start justify-center pl-7 sm:w-2/3">
+      <div className="relative z-10 flex h-11/12 w-11/12 max-w-[700px] flex-col items-start justify-center pl-7 sm:w-2/3">
         <h1
           style={{ textShadow: '2px 2px 0 #fff' }}
-          className="mb-4 text-left text-5xl text-(--color-secondary) sm:text-6xl"
+          className="mb-6 text-left text-4xl text-(--color-secondary) sm:text-5xl"
         >
           {t('title')}
         </h1>
-        <p className="text-justify text-lg">{t('bannerIntro')}</p>
+        <div id="banner-intro">
+          <p className="text-lg">{t('bannerIntro')}</p>
+        </div>
 
         {/* <a
           href="#about"
@@ -30,6 +32,8 @@ export default function Banner() {
           />
         </a> */}
       </div>
+
+      <div id="wave-detail"></div>
     </div>
   );
 }

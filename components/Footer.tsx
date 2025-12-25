@@ -6,7 +6,7 @@ import LanguageSwitcher from '@/components/LanguageSwitcher';
 export default function Footer() {
   const t = useTranslations('footer');
   return (
-    <footer className="relative bottom-0 left-0 flex h-fit min-h-[110px] w-full flex-col items-center justify-center gap-y-6 px-4 py-5 text-white">
+    <footer className="relative bottom-0 left-0 flex h-fit min-h-[110px] w-full flex-col items-center justify-center gap-y-6 px-5 py-5 text-white">
       <div className="flex w-full flex-col items-start justify-around gap-y-3.5 sm:flex-row">
         <div className="footer-row-list">
           <h2>{t('contactsTitle')}</h2>
@@ -61,7 +61,7 @@ export default function Footer() {
           <LanguageSwitcher />
         </div>
       </div>
-      <div>
+      <div className="text-center">
         © 2025{' '}
         <a href="https://github.com/violettpv" target="_blank">
           {t('author')}

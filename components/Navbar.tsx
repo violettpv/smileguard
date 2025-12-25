@@ -23,7 +23,7 @@ export default function Navbar() {
 
   return (
     <nav className="flex h-full w-2/3 items-center justify-end">
-      <ul className="nav-list hidden h-full w-full flex-row items-center justify-end gap-10 text-2xl md:flex">
+      <ul className="nav-list hidden h-full w-full flex-row items-center justify-end gap-10 text-xl md:flex">
         <li>
           <a href="#about">{t('aboutUs')}</a>
         </li>
@@ -93,7 +93,7 @@ export default function Navbar() {
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <ul className="nav-list flex h-full flex-col items-center gap-10 pt-28 text-xl">
+        <ul className="nav-list flex h-full flex-col items-center gap-10 pt-32 text-xl">
           <li>
             <a href="#about" onClick={() => setIsMobileMenuOpen(false)}>
               {t('aboutUs')}

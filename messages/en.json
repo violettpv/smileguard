@@ -20,5 +20,121 @@
     "author": "Violetta Poltava",
     "copyright": "All rights reserved"
   },
-  "homePage": {}
+  "homePage": {
+    "bruxism": {
+      "title": "What Is Bruxism?",
+      "content": [
+        "Bruxism is a condition characterized by involuntary teeth grinding, jaw clenching, and excessive wear of tooth structures. It most commonly occurs during sleep but can also be present during the day.",
+        "The masticatory muscles are among the strongest muscles in the human body. When they are in spasm, they can generate forces several times greater than normal chewing pressure. Muscle overactivity—often triggered by stress—leads to the harmful effects associated with bruxism.",
+        "Teeth, crowns, veneers, and dental implants often cannot withstand such excessive forces and may respond with accelerated wear, fractures, or implant loosening.",
+        "Bruxism can lead to significant bite disorders. At the same time, an improper bite may also contribute to the development of bruxism and tooth wear."
+      ]
+    },
+
+    "mouthguards": {
+      "title": "Bruxism Mouthguards",
+      "content": [
+        "Bruxism mouthguards, also known as night guards, are an effective solution for protecting teeth from excessive wear and reducing tension in the jaw muscles. They prevent direct contact between the upper and lower teeth during grinding or clenching, which most often occurs during sleep.",
+        "A mouthguard is a custom-made transparent dental appliance worn over the teeth—on either the upper or lower arch—to protect against damage caused by involuntary grinding and clenching. It acts as a personalized barrier between the upper and lower teeth.",
+        "The mouthguard functions as a shock absorber, evenly distributing occlusal forces across the dental arch and preventing direct tooth-to-tooth contact. Instead of wearing down the teeth, the load is transferred to the appliance."
+      ],
+      "benefits": {
+        "title": "This allows you to:",
+        "list": [
+          "protect tooth enamel from wear and cracking",
+          "reduce excessive load on the temporomandibular joints (TMJ) and masticatory muscles, thereby decreasing pain and discomfort",
+          "reduce the intensity of grinding and, in some cases, eliminate it entirely",
+          "prevent damage to fillings, veneers, crowns, and other dental restorations"
+        ]
+      }
+    },
+
+    "types": {
+      "title": "Types of Bruxism Mouthguards",
+      "items": [
+        {
+          "title": "Custom-Made Mouthguards",
+          "text": "This is the most effective option. These mouthguards are fabricated in a dental laboratory based on individual impressions or digital scans of the patient’s jaws, ensuring a precise fit, maximum comfort, and optimal protection. They are often made from soft or semi-soft materials."
+        },
+        {
+          "title": "Muscle-Relaxation Mouthguards",
+          "text": "These mouthguards are designed to relax the masticatory muscles and reduce tension in the temporomandibular joint. They are commonly recommended for patients whose bruxism is related to stress or malocclusion. They are custom-made from various materials based on individual clinical needs."
+        },
+        {
+          "title": "Protective Mouthguards",
+          "text": "Protective mouthguards are intended primarily to prevent tooth wear. They may be soft, hard, or multilayered. In some cases, they are fabricated from thin sheets of medical-grade plastic using thermoforming technology on a dental model."
+        },
+        {
+          "title": "Stabilization Mouthguards",
+          "text": "These mouthguards are used after occlusal therapy, bruxism treatment, or orthodontic treatment to maintain the achieved results or the current bite position. They help keep the teeth properly aligned and provide long-term occlusal stability."
+        }
+      ]
+    },
+
+    "whoNeeds": {
+      "title": "Who Needs a Bruxism Mouthguard?",
+      "content": [
+        "A night guard for bruxism is recommended for anyone diagnosed with this condition, regardless of its severity. Indications for wearing a mouthguard include:"
+      ],
+      "list": [
+        "diagnosed bruxism",
+        "tooth wear and enamel damage",
+        "increased tooth sensitivity",
+        "frequent failure of fillings or chipping of ceramic restorations (crowns, veneers)",
+        "headaches and pain in the face, neck, or shoulders",
+        "pain or clicking sounds in the temporomandibular joints (TMJ)"
+      ]
+    },
+
+    "advantages": {
+      "title": "Advantages of Custom Bruxism Mouthguards",
+      "content": [
+        "Choosing a custom-made mouthguard over prefabricated solutions offers several important advantages that ensure maximum comfort and effectiveness:"
+      ],
+      "items": [
+        {
+          "title": "Perfect Fit",
+          "text": "The mouthguard is manufactured according to the exact anatomical features of your dental arch using 3D scanning technology. This guarantees a secure and comfortable fit without looseness or irritation."
+        },
+        {
+          "title": "Maximum Protection",
+          "text": "Thanks to precise force distribution, a custom mouthguard effectively protects each tooth from wear and chipping while ensuring balanced occlusal pressure."
+        },
+        {
+          "title": "Wearing Comfort",
+          "text": "The appliance does not feel like a foreign object in the mouth, does not irritate the gums, and does not trigger a gag reflex."
+        },
+        {
+          "title": "Durability",
+          "text": "Custom-fabricated mouthguards made from high-quality materials are more resistant to wear and last longer than standard alternatives."
+        },
+        {
+          "title": "Material Safety",
+          "text": "The bruxism mouthguards produced in our laboratory are made from biocompatible, hypoallergenic medical-grade plastics that are completely safe for oral health."
+        }
+      ]
+    },
+
+    "care": {
+      "title": "Caring for Your Bruxism Mouthguard",
+      "items": [
+        {
+          "title": "Cleaning",
+          "text": "The mouthguard requires regular cleaning. Use a soft toothbrush and a dedicated dental appliance cleaner. Avoid hot water, as it may deform the material."
+        },
+        {
+          "title": "Storage",
+          "text": "Store the mouthguard in a clean, dry container to prevent bacterial growth."
+        },
+        {
+          "title": "Avoid Temperature Exposure",
+          "text": "Direct sunlight or nearby heat sources may cause deformation of the material."
+        },
+        {
+          "title": "Regular Inspections",
+          "text": "Periodically inspect the mouthguard for signs of wear, damage, or loss of proper fit. If any issues are detected, consult your dentist."
+        }
+      ]
+    }
+  }
 }
