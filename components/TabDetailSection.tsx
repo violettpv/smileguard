@@ -31,7 +31,7 @@ export default function TabDetailSection({ baseKey }: Props) {
             <button
               key={item.title}
               onClick={() => setActiveKey(item.title)}
-              className={`cursor-pointer p-2 text-left transition ${
+              className={`button-tab p-2 transition ${
                 item.title === activeKey
                   ? 'active-tab'
                   : 'text-(--color-primary)'
@@ -44,7 +44,10 @@ export default function TabDetailSection({ baseKey }: Props) {
         </div>
 
         <div className="types-content">
-          <p>{activeItem.text}</p>
+          <span id="blockquote"></span>
+          <p key={activeKey} className="content-transition">
+            {activeItem.text}
+          </p>
         </div>
       </div>
     </section>

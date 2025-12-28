@@ -7,7 +7,7 @@ const LanguageSwitcher = () => {
   const currentLang = locale.split('-')[0];
 
   return (
-    <div className="mt-3 flex items-center justify-start sm:justify-center">
+    <div className="mt-3 flex items-center justify-center">
       <div className="flex w-20 flex-row items-center justify-evenly rounded-sm bg-gray-300 text-lg font-semibold text-(--color-secondary)">
         <Link
           href="/"

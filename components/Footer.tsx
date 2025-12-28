@@ -7,9 +7,9 @@ export default function Footer() {
   const t = useTranslations('footer');
   return (
     <footer className="relative bottom-0 left-0 flex h-fit min-h-[110px] w-full flex-col items-center justify-center gap-y-6 px-5 py-5 text-white">
-      <div className="flex w-full flex-col items-start justify-around gap-y-3.5 sm:flex-row">
+      <div className="flex w-full flex-col items-center justify-around gap-y-8 sm:flex-row sm:items-start">
         <div className="footer-row-list">
-          <h2>{t('contactsTitle')}</h2>
+          <h2 className="text-center sm:text-left">{t('contactsTitle')}</h2>
           <ul className="contacts">
             <li>
               <a href="https://maps.app.goo.gl/966RT4uJi8BwEVMJ9">
@@ -25,8 +25,8 @@ export default function Footer() {
           </ul>
         </div>
         <div className="footer-row-list">
-          <h2>{t('socialMediaTitle')}</h2>
-          <ul className="flex flex-row justify-start gap-2 sm:justify-center">
+          <h2 className="text-center sm:text-left">{t('socialMediaTitle')}</h2>
+          <ul className="my-2 flex flex-row justify-evenly">
             <li>
               <a href="http://">
                 <Image

@@ -45,6 +45,11 @@ h6 {
   font-family: var(--font-dela-gothic-one), Arial, Helvetica, sans-serif;
 }
 
+ul,
+ol {
+  font-size: 1.15rem;
+}
+
 .banner-img {
   background: url('/banner1.webp') center / cover no-repeat;
   position: relative;
@@ -221,34 +226,74 @@ main h3 {
 .types-titles,
 .types-content {
   padding: 0.5rem;
-  width: 50%;
   height: 100%;
   padding: 1.2rem;
   display: flex;
+  flex-direction: column;
 }
 
 .types-titles {
-  row-gap: 18px;
-  flex-direction: column;
+  width: 40%;
+  row-gap: 12px;
   align-items: flex-start;
   justify-content: space-evenly;
   font-size: 1.25rem;
 }
 
+.button-tab {
+  cursor: pointer;
+  text-align: left;
+  border-bottom: 5px solid transparent;
+}
+
 .active-tab {
   font-weight: bold;
   color: var(--color-third);
-  outline: 5px solid var(--color-third);
+  border-bottom: 5px solid var(--color-third);
 }
 
 .types-content {
-  background-color: var(--color-primary);
-  align-items: center;
+  width: 60%;
+  justify-content: center;
+
+  position: relative;
+
+  border-color: rgba(38, 125, 171, 0.7);
+  border-style: solid;
+  border-width: 2px 2px 2px 10px;
+  background-color: rgba(38, 125, 171, 0.1);
 }
 
 .types-content p {
   margin: 0;
-  color: var(--color-light);
+  /* color: var(--color-light); */
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content-transition {
+  animation: fadeSlide 250ms ease;
+}
+
+#blockquote {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  font-size: 100px;
+  color: var(--color-primary);
+}
+
+#blockquote::before {
+  content: '\201c';
 }
 
 @media screen and (max-width: 925.9px) {
@@ -263,11 +308,23 @@ main h3 {
     width: 100%;
     height: 620px;
     justify-content: space-between;
-    gap: 10px;
+    gap: 12px;
   }
   .types-titles,
   .types-content {
     width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 640.9px) {
+  #blockquote {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420.9px) {
+  .types-wrapper {
     height: 100%;
   }
 }
@@ -328,6 +385,7 @@ main h3 {
   .ordered-section ol li {
     position: relative;
     padding: 1em 0;
+    width: 100%;
   }
   .ordered-section ol li::after {
     position: absolute;
@@ -358,6 +416,12 @@ main h3 {
 }
 
 @media screen and (max-width: 499.9px) {
+  main h2,
+  main h3 {
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+
   main h2 {
     font-size: 2rem;
   }
