@@ -54,7 +54,7 @@ export default function MainContent() {
           {(t.raw('advantages.items') as { title: string; text: string }[]).map(
             ({ title, text }) => (
               <div key={title}>
-                <h3>{title}</h3>
+                <h4>{title}</h4>
                 <p>{text}</p>
               </div>
             ),
