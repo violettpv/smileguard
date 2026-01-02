@@ -5,7 +5,7 @@
   },
   "header": {
     "title": "Bruxism night guard",
-    "bannerIntro": "Bruxism splints, or night guards, are an effective way to protect teeth from wear and reduce tension in the jaw muscles. They prevent direct contact between the upper and lower teeth during grinding or strong clenching of the jaws, which most often occurs during sleep."
+    "bannerIntro": "Night guards for bruxism protect teeth from damage and relieve jaw tension. During sleep, they prevent teeth from grinding against each other."
   },
   "navigation": {
     "aboutUs": "About Us",
@@ -23,27 +23,40 @@
   "homePage": {
     "bruxism": {
       "title": "What Is Bruxism?",
-      "content": [
-        "Bruxism is a condition characterized by involuntary teeth grinding, jaw clenching, and excessive wear of tooth structures. It most commonly occurs during sleep but can also be present during the day.",
-        "The masticatory muscles are among the strongest muscles in the human body. When they are in spasm, they can generate forces several times greater than normal chewing pressure. Muscle overactivity—often triggered by stress—leads to the harmful effects associated with bruxism.",
-        "Teeth, crowns, veneers, and dental implants often cannot withstand such excessive forces and may respond with accelerated wear, fractures, or implant loosening.",
-        "Bruxism can lead to significant bite disorders. At the same time, an improper bite may also contribute to the development of bruxism and tooth wear."
-      ]
+      "content_1": [
+        "Bruxism is involuntary teeth grinding or strong jaw clenching that most often occurs during sleep, but can also happen during the day. People usually do not control this process and often are not even aware of the problem.",
+        "During bruxism, the chewing muscles tense much more than necessary, creating excessive pressure on the teeth. The main causes of this muscle spasm are often stress, emotional tension, or bite misalignment."
+      ],
+      "list_title": "The consequences of bruxism can be serious:",
+      "list": [
+        "tooth wear and cracks",
+        "damage to crowns, veneers, and fillings",
+        "loosening of dental implants",
+        "jaw pain, headaches, and clicking in the jaw joints"
+      ],
+      "content_2": "It is important to know that bruxism and bite misalignment are often interconnected: one can be both the cause and the result of the other."
     },
 
     "mouthguards": {
-      "title": "Bruxism Mouthguards",
-      "content": [
-        "Bruxism mouthguards, also known as night guards, are an effective solution for protecting teeth from excessive wear and reducing tension in the jaw muscles. They prevent direct contact between the upper and lower teeth during grinding or clenching, which most often occurs during sleep.",
-        "A mouthguard is a custom-made transparent dental appliance worn over the teeth—on either the upper or lower arch—to protect against damage caused by involuntary grinding and clenching. It acts as a personalized barrier between the upper and lower teeth.",
-        "The mouthguard functions as a shock absorber, evenly distributing occlusal forces across the dental arch and preventing direct tooth-to-tooth contact. Instead of wearing down the teeth, the load is transferred to the appliance."
+      "title": "Mouthguards for Bruxism",
+      "content_1": [
+        "Mouthguards for bruxism (night guards) are a simple and effective way to protect teeth from wear and reduce strain on the jaw muscles during sleep.",
+        "A mouthguard is a transparent, custom-made appliance worn on the upper or lower teeth. It creates a protective barrier between the teeth, preventing direct contact during grinding or strong clenching."
       ],
+      "list_title": "When using a mouthguard:",
+      "list": [
+        "pressure is evenly distributed",
+        "muscle tension is reduced",
+        "teeth, fillings, and dental restorations are protected"
+      ],
+      "content_2": "Instead of damaging the teeth, the mouthguard absorbs the load, significantly reducing the risk of complications and helping maintain long-term dental health.",
+
       "benefits": {
         "title": "This allows you to:",
         "list": [
           "protect tooth enamel from wear and cracking",
-          "reduce excessive load on the temporomandibular joints (TMJ) and masticatory muscles, thereby decreasing pain and discomfort",
-          "reduce the intensity of grinding and, in some cases, eliminate it entirely",
+          "relieve excessive stress on the temporomandibular joints and chewing muscles, reducing pain and discomfort",
+          "reduce the intensity of teeth grinding and, in some cases, eliminate it completely",
           "prevent damage to fillings, veneers, crowns, and other dental restorations"
         ]
       }

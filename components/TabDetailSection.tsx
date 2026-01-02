@@ -23,7 +23,7 @@ export default function TabDetailSection({ baseKey }: Props) {
   if (!activeItem) return null;
 
   return (
-    <section className="flex h-full w-full">
+    <section className="flex h-full w-full flex-col">
       <h2>{t(`${baseKey}.title`)}</h2>
       <div className="types-wrapper">
         <div className="types-titles">

@@ -147,8 +147,8 @@ main {
 }
 
 main section {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   width: 100%;
   margin: 3rem 0;
 }
@@ -226,6 +226,7 @@ main h4 {
 .custom-list {
   list-style-type: disc;
   padding-left: 2rem;
+  margin-bottom: 1rem;
 }
 
 .types-wrapper {
