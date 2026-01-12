@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 import LanguageSwitcher from '@/components/LanguageSwitcher';
+import { getCurrentYear } from '@/lib/date';
 
 export default function Footer() {
   const t = useTranslations('footer');
@@ -11,23 +12,25 @@ export default function Footer() {
         <div className="footer-row-list">
           <h2 className="text-center sm:text-left">{t('contactsTitle')}</h2>
           <ul className="contacts">
-            <li>
+            {/* <li>
               <a href="https://maps.app.goo.gl/966RT4uJi8BwEVMJ9">
                 {t('address')}
               </a>
+            </li> */}
+            <li>
+              <a href="tel:380955710354">+380-95-571-03-54</a>
             </li>
             <li>
-              <a href="tel:380xxxxxxxxx">+380xx-xxx-xx-xx</a>
-            </li>
-            <li>
-              <a href="mailto:example@gmail.com">example@gmail.com</a>
+              <a href="mailto:poltava.svitlana@gmail.com">
+                poltava.svitlana@gmail.com
+              </a>
             </li>
           </ul>
         </div>
         <div className="footer-row-list">
-          <h2 className="text-center sm:text-left">{t('socialMediaTitle')}</h2>
+          <h2 className="text-center sm:text-left">{t('messengersTitle')}</h2>
           <ul className="my-2 flex flex-row justify-evenly">
-            <li>
+            {/* <li>
               <a href="http://">
                 <Image
                   src="/icons8-instagram.svg"
@@ -36,9 +39,9 @@ export default function Footer() {
                   height={40}
                 />
               </a>
-            </li>
+            </li> */}
             <li>
-              <a href="http://">
+              <a href="https://t.me/+380955710354">
                 <Image
                   src="/icons8-telegram-app.svg"
                   alt="Telegram Icon"
@@ -48,7 +51,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="http://">
+              <a href="viber://chat?number=380955710354">
                 <Image
                   src="/icons8-viber.svg"
                   alt="Viber Icon"
@@ -62,7 +65,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="text-center">
-        © 2025{' '}
+        © {getCurrentYear()}{' '}
         <a href="https://github.com/violettpv" target="_blank">
           {t('author')}
         </a>
